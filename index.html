@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Load model glTF</title>
-    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
   </head>
   <body>
     <!-- HTML goes here -->
@@ -12,19 +12,19 @@
       <a-assets>
         <!--3Dモデルの定義（メタセコイアなどで作成 glb(gltf2.0)で保存-->
         <a-asset-item
-          id="test"
-          src="test.glb"
+          id="Kirby"
+          src="poteti.glb"
         ></a-asset-item>
       </a-assets>
       <a-entity
-        gltf-model="#test"
+        gltf-model="#Kirby"
         animation-mixer
-        position="0 2 -7"
+        position="0 0 -10"
         scale="1 1 1"
         animation="property: rotation;
-                 from: 0 0 0;
+                 from: 0 90 0;
                  dur: 20000;
-                 to: 360 360 360;
+                 to: 360 -90 360;
                  loop: true;"
         shadow="receive:false;"
       ></a-entity> 
